@@ -13,13 +13,12 @@
 +  catalog.cattle.io/release-name: sriov
 +  catalog.cattle.io/upstream-version: 1.2.0
  apiVersion: v2
--appVersion: 1.1.0
+ appVersion: 1.2.0
 -dependencies:
 -- condition: rancher-nfd.enabled
 -  name: rancher-nfd
 -  repository: file://./charts/rancher-nfd
--  version: 0.14.1
-+appVersion: 1.2.0
+-  version: 0.15.4
  description: SR-IOV network operator configures and manages SR-IOV networks in the
    kubernetes cluster
  home: https://github.com/k8snetworkplumbingwg/sriov-network-operator
@@ -27,7 +26,7 @@
  keywords:
  - sriov
 +- Networking
- kubeVersion: '>= 1.16.0'
+ kubeVersion: '>= 1.16.0-0'
 -name: sriov-network-operator
 +maintainers:
 +- email: charts@rancher.com
