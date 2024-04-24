@@ -20525,6 +20525,39 @@ entries:
       catalog.cattle.io/auto-install: sriov-crd=match
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/experimental: "true"
+      catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.30.0-0'
+      catalog.cattle.io/namespace: cattle-sriov-system
+      catalog.cattle.io/os: linux
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/rancher-version: '>= 2.9.0-0 < 2.10.0-0'
+      catalog.cattle.io/release-name: sriov
+      catalog.cattle.io/upstream-version: 1.2.0
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2024-04-23T20:54:35.074520717-06:00"
+    description: SR-IOV network operator configures and manages SR-IOV networks in
+      the kubernetes cluster
+    digest: ea11143c604cc268a6898920efeed7cd2dc943b229faef21979932d3601abf95
+    home: https://github.com/k8snetworkplumbingwg/sriov-network-operator
+    icon: https://charts.rancher.io/assets/logos/sr-iov.svg
+    keywords:
+    - sriov
+    - Networking
+    kubeVersion: '>= 1.16.0-0'
+    maintainers:
+    - email: charts@rancher.com
+      name: Rancher Labs
+    name: sriov
+    sources:
+    - https://github.com/rancher/charts
+    type: application
+    urls:
+    - assets/sriov/sriov-104.0.0+up0.1.0.tgz
+    version: 104.0.0+up0.1.0
+  - annotations:
+      catalog.cattle.io/auto-install: sriov-crd=match
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/experimental: "true"
       catalog.cattle.io/kube-version: '>= 1.16.0-0 < 1.29.0-0'
       catalog.cattle.io/namespace: cattle-sriov-system
       catalog.cattle.io/os: linux
@@ -20915,6 +20948,22 @@ entries:
     - assets/sriov/sriov-100.0.0+up0.1.0.tgz
     version: 100.0.0+up0.1.0
   sriov-crd:
+  - annotations:
+      catalog.cattle.io/certified: rancher
+      catalog.cattle.io/experimental: "true"
+      catalog.cattle.io/hidden: "true"
+      catalog.cattle.io/namespace: cattle-sriov-system
+      catalog.cattle.io/permits-os: linux
+      catalog.cattle.io/release-name: sriov-crd
+    apiVersion: v2
+    created: "2024-04-23T20:54:35.07759398-06:00"
+    description: Installs the CRDs for the SR-IOV operator
+    digest: e0be90f05401bf1cc9a99ceb8bf99aa52e822fcf0d8b2c3d2070142d12a21dd1
+    name: sriov-crd
+    type: application
+    urls:
+    - assets/sriov-crd/sriov-crd-104.0.0+up0.1.0.tgz
+    version: 104.0.0+up0.1.0
   - annotations:
       catalog.cattle.io/certified: rancher
       catalog.cattle.io/experimental: "true"
