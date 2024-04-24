@@ -19,7 +19,19 @@
    cniBinPath: "/opt/cni/bin"
    clusterType: "kubernetes"
    admissionControllers:
-@@ -91,12 +94,33 @@
+@@ -78,9 +81,9 @@
+ 
+ sriovOperatorConfig:
+   # deploy sriovOperatorConfig CR with the below values
+-  deploy: false
++  deploy: true
+   # node slectors for sriov-network-config-daemon
+-  configDaemonNodeSelector: {}
++  configDaemonNodeSelector: {feature.node.kubernetes.io/network-sriov.capable: 'true'}
+   # log level for both operator and sriov-network-config-daemon
+   logLevel: 2
+   # disable node draining when configuring SR-IOV, set to true in case of a single node
+@@ -91,12 +94,36 @@
  
  # Image URIs for sriov-network-operator components
  images:
