@@ -58,10 +58,6 @@ packages/rancher-logging @rancher/observation-backup
 # Rancher Monitoring
 packages/rancher-monitoring @rancher/observation-backup
 
-# Rancher SRIOV
-packages/rancher-sriov @rancher/rke1-team
-packages/rancher-nfd @rancher/rke1-team
-
 # Rancher Provisioning CAPI
 packages/rancher-provisioning-capi @rancher/rancher-team-2-hostbusters-dev
 
