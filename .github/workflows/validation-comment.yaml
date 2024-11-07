@@ -31,9 +31,11 @@ jobs:
               - Ensure all container images have repository and tag on the same level to ensure that all container images are included in rancher-images.txt which are used by airgap customers.
               <pre>
               Ex:-
-                longhorn-controller:
-                  repository: rancher/hardened-sriov-cni
-                  tag: v2.6.3-build20230913
+                engine:
+                  # -- Repository for the Longhorn Engine image.
+                  repository: rancher/mirrored-longhornio-longhorn-engine
+                  # -- Specify Longhorn engine image tag
+                  tag: v1.6.2
               </pre>
               - Add a 👍 (thumbs up) reaction to this comment once done. CI won't pass without this reaction to the github-action bot's latest validation comment.
               - Approve the PR to run the CI check.`
